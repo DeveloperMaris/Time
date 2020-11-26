@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "6B6F3602-E0BD-4D9C-B91C-679126BAC61A",
+      "name" : "Region-America",
+      "options" : {
+        "language" : "en",
+        "region" : "US"
+      }
+    },
+    {
+      "id" : "AFD6B264-478E-453D-A5E8-B709875F1F84",
+      "name" : "Region-Latvia",
+      "options" : {
+        "language" : "en-GB",
+        "region" : "LV"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Time.xcodeproj",
+        "identifier" : "B5319C01256F9CD900B75403",
+        "name" : "TimeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

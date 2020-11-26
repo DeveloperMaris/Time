@@ -36,7 +36,7 @@ class TimeViewModel: ObservableObject {
     /// Provides current date
     ///
     /// This property will automatically update every second when then `startTimer` method is executed
-    @Published var currentDate = Date()
+    @Published private(set) var currentDate = Date()
 
     /// Begins timer countdown to update current date-time every second
     func startTimer() {
@@ -48,8 +48,12 @@ class TimeViewModel: ObservableObject {
             .publish(every: 1, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] value in
-                self?.currentDate = value
+                self?.set(date: value)
             }
+    }
+
+    func set(date: Date) {
+        currentDate = date
     }
 
     func invalidateTimer() {
