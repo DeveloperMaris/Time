@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TimeNowView: View {
-    typealias ViewModel = TimeViewModel
+    typealias ViewModel = TimeNowViewModel
 
     @StateObject var viewModel = ViewModel()
 

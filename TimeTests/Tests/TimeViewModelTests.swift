@@ -15,7 +15,7 @@ class TimeViewModelTests: XCTestCase {
         let dateFormat = "h:mm a"
 
         // Then
-        XCTAssertEqual(TimeViewModel.dateFormatterFor12hours.dateFormat, dateFormat)
+        XCTAssertEqual(TimeNowViewModel.dateFormatterFor12hours.dateFormat, dateFormat)
     }
 
     func test12HourDateFormatterLocale() {
@@ -23,7 +23,7 @@ class TimeViewModelTests: XCTestCase {
         let locale = "en_US"
 
         // Then
-        XCTAssertEqual(TimeViewModel.dateFormatterFor12hours.locale.identifier, locale)
+        XCTAssertEqual(TimeNowViewModel.dateFormatterFor12hours.locale.identifier, locale)
     }
 
     func test24HourDateFormatterFormat() {
@@ -31,7 +31,7 @@ class TimeViewModelTests: XCTestCase {
         let dateFormat = "HH:mm"
 
         // Then
-        XCTAssertEqual(TimeViewModel.dateFormatterFor24hours.dateFormat, dateFormat)
+        XCTAssertEqual(TimeNowViewModel.dateFormatterFor24hours.dateFormat, dateFormat)
     }
 
     func test24HourDateFormatterLocale() {
@@ -39,7 +39,7 @@ class TimeViewModelTests: XCTestCase {
         let locale = "en_US"
 
         // Then
-        XCTAssertEqual(TimeViewModel.dateFormatterFor24hours.locale.identifier, locale)
+        XCTAssertEqual(TimeNowViewModel.dateFormatterFor24hours.locale.identifier, locale)
     }
 
     func testCurrentDateIsNow() {
@@ -50,7 +50,7 @@ class TimeViewModelTests: XCTestCase {
         let providedComponents = calendar.dateComponents(components, from: date)
 
         // When
-        let sut = TimeViewModel()
+        let sut = TimeNowViewModel()
 
         // Then
         let modelComponents = calendar.dateComponents(components, from: sut.currentDate)
@@ -59,7 +59,7 @@ class TimeViewModelTests: XCTestCase {
 
     func testCurrentDateUpdates() {
         // Given
-        let sut = TimeViewModel()
+        let sut = TimeNowViewModel()
         let newDate = sut.currentDate.addingTimeInterval(60)
 
         // When
@@ -76,7 +76,7 @@ class TimeViewModelTests: XCTestCase {
         let date = calendar.date(from: components)!
 
         // When
-        let formattedDate = TimeViewModel.dateFormatterFor12hours.string(from: date)
+        let formattedDate = TimeNowViewModel.dateFormatterFor12hours.string(from: date)
 
         // Then
         XCTAssertEqual(formattedDate, "2:41 PM")
@@ -89,7 +89,7 @@ class TimeViewModelTests: XCTestCase {
         let date = calendar.date(from: components)!
 
         // When
-        let formattedDate = TimeViewModel.dateFormatterFor24hours.string(from: date)
+        let formattedDate = TimeNowViewModel.dateFormatterFor24hours.string(from: date)
 
         // Then
         XCTAssertEqual(formattedDate, "14:41")

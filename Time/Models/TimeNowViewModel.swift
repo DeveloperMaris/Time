@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import os.log
 
-class TimeViewModel: ObservableObject {
+class TimeNowViewModel: ObservableObject {
     /// 12-Hour date formatter
     static let dateFormatterFor12hours: DateFormatter = {
         let formatter = DateFormatter()
@@ -29,7 +29,7 @@ class TimeViewModel: ObservableObject {
         return formatter
     }()
 
-    private let logger = Logger.make(category: "TimeViewModel")
+    private let logger = Logger.make(category: "TimeNowViewModel")
 
     private var timer: AnyCancellable?
 

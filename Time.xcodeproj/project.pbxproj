@@ -12,7 +12,7 @@
 		B51F0241254DC2BA00F41559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51F0240254DC2BA00F41559 /* Assets.xcassets */; };
 		B51F0244254DC2BA00F41559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51F0243254DC2BA00F41559 /* Preview Assets.xcassets */; };
 		B51F0251254DC7C600F41559 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F0250254DC7C600F41559 /* TimeView.swift */; };
-		B51F0254254DCA4D00F41559 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F0253254DCA4D00F41559 /* TimeViewModel.swift */; };
+		B51F0254254DCA4D00F41559 /* TimeNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F0253254DCA4D00F41559 /* TimeNowViewModel.swift */; };
 		B51F0258254EF1D300F41559 /* TimeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F0257254EF1D300F41559 /* TimeInputView.swift */; };
 		B5319BE9256EE30D00B75403 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319BE8256EE30D00B75403 /* ContentView.swift */; };
 		B5319BED256F916900B75403 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319BEC256F916900B75403 /* SeparatorView.swift */; };
@@ -38,7 +38,7 @@
 		B51F0243254DC2BA00F41559 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B51F0245254DC2BA00F41559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51F0250254DC7C600F41559 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
-		B51F0253254DCA4D00F41559 /* TimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewModel.swift; sourceTree = "<group>"; };
+		B51F0253254DCA4D00F41559 /* TimeNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowViewModel.swift; sourceTree = "<group>"; };
 		B51F0257254EF1D300F41559 /* TimeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInputView.swift; sourceTree = "<group>"; };
 		B5319BE8256EE30D00B75403 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5319BEC256F916900B75403 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		B5319BF1256F92E800B75403 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B51F0253254DCA4D00F41559 /* TimeViewModel.swift */,
+				B51F0253254DCA4D00F41559 /* TimeNowViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51F023F254DC2B900F41559 /* TimeNowView.swift in Sources */,
-				B51F0254254DCA4D00F41559 /* TimeViewModel.swift in Sources */,
+				B51F0254254DCA4D00F41559 /* TimeNowViewModel.swift in Sources */,
 				B5319BED256F916900B75403 /* SeparatorView.swift in Sources */,
 				B5319BE9256EE30D00B75403 /* ContentView.swift in Sources */,
 				B51F0258254EF1D300F41559 /* TimeInputView.swift in Sources */,
