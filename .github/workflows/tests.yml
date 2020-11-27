@@ -1,0 +1,38 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  test:
+    name: Unit testing
+    runs-on: macos-latest
+
+    env:
+      simulator: iOS Simulator,OS=14.2,name=iPhone 12
+      scheme: Time
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Force Xcode version
+        run: sudo xcode-select -switch /Applications/Xcode_12.2.app
+
+      - name: Clean project
+        run: |
+          set -o pipefail
+          xcodebuild clean
+
+      - name: Build project
+        run: |
+          set -o pipefail
+          xcodebuild -scheme '${{ env.scheme }}' -destination platform='${{ env.simulator }}' build-for-testing | xcpretty
+
+      - name: Test project
+        run: |
+          set -o pipefail
+          xcodebuild -scheme '${{ env.scheme }}' -destination platform='${{ env.simulator }}' test-without-building | xcpretty
