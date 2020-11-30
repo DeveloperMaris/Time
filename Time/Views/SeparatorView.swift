@@ -16,6 +16,7 @@ struct SeparatorView: View {
             Text(topCaption)
                 .font(.caption)
                 .italic()
+                .accessibilityIdentifier("separator-view.caption.top")
 
             Color.primary
                 .frame(width: 200, height: 1)
@@ -24,6 +25,7 @@ struct SeparatorView: View {
             Text(bottomCaption)
                 .font(.caption)
                 .italic()
+                .accessibilityIdentifier("separator-view.caption.bottom")
         }
     }
 }

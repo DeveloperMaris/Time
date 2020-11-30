@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var timeNowModel = TimeNowViewModel()
+
+    init() {
+        #if DEBUG
+        if CommandLine.arguments.contains("-enable-testing") {
+            _timeNowModel = StateObject(wrappedValue: TimeNowViewModel.makeForTesting())
+        }
+        #endif
+    }
+
     var body: some View {
         TabView {
-            TimeNowView()
+            TimeNowView(viewModel: timeNowModel)
                 .tabItem {
                     Image(systemName: "clock")
                     Text("Now")
                 }
 
-            TimeInputView()
+            TimeInputView(date: timeNowModel.currentDate)
                 .tabItem {
                     Image(systemName: "arrow.up.arrow.down.circle")
                     Text("Set time")

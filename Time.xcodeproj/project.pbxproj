@@ -18,10 +18,20 @@
 		B5319BED256F916900B75403 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319BEC256F916900B75403 /* SeparatorView.swift */; };
 		B5319BF8256F96DA00B75403 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319BF7256F96DA00B75403 /* LoggerExtension.swift */; };
 		B5319C05256F9CD900B75403 /* TimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */; };
+		B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
+		B56F59A1257513A000409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
+		B5DC9CBE2574F4DD00751EF0 /* TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B5319C07256F9CD900B75403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51F0231254DC2B900F41559 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51F0238254DC2B900F41559;
+			remoteInfo = Time;
+		};
+		B5DC9CA02574D85C00751EF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B51F0231254DC2B900F41559 /* Project object */;
 			proxyType = 1;
@@ -47,6 +57,11 @@
 		B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewModelTests.swift; sourceTree = "<group>"; };
 		B5319C06256F9CD900B75403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5319C14256FA2D000B75403 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		B56F59812574F72F00409A76 /* TimeNowTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowTestModel.swift; sourceTree = "<group>"; };
+		B5DC9C9B2574D85C00751EF0 /* TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUITests.swift; sourceTree = "<group>"; };
+		B5DC9C9F2574D85C00751EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DC9CAB2574DB6E00751EF0 /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5DC9C982574D85C00751EF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,7 +94,7 @@
 			children = (
 				B51F023B254DC2B900F41559 /* Time */,
 				B5319C03256F9CD900B75403 /* TimeTests */,
-				B5319C13256FA2A300B75403 /* TestPlans */,
+				B5DC9C9C2574D85C00751EF0 /* TimeUITests */,
 				B51F023A254DC2B900F41559 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +104,7 @@
 			children = (
 				B51F0239254DC2B900F41559 /* Time.app */,
 				B5319C02256F9CD900B75403 /* TimeTests.xctest */,
+				B5DC9C9B2574D85C00751EF0 /* TimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +145,7 @@
 		B5319BF1256F92E800B75403 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B56F59A825751B1900409A76 /* Tests */,
 				B51F0253254DCA4D00F41559 /* TimeNowViewModel.swift */,
 			);
 			path = Models;
@@ -164,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B5319C06256F9CD900B75403 /* Info.plist */,
+				B5DC9CB02574DD8D00751EF0 /* TestPlans */,
 				B5319C10256FA28700B75403 /* Tests */,
 			);
 			path = TimeTests;
@@ -177,7 +202,41 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		B5319C13256FA2A300B75403 /* TestPlans */ = {
+		B56F59982574FB7900409A76 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B56F59A825751B1900409A76 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B56F59812574F72F00409A76 /* TimeNowTestModel.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B5DC9C9C2574D85C00751EF0 /* TimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC9C9F2574D85C00751EF0 /* Info.plist */,
+				B5DC9CAF2574DD8000751EF0 /* TestPlans */,
+				B56F59982574FB7900409A76 /* Tests */,
+			);
+			path = TimeUITests;
+			sourceTree = "<group>";
+		};
+		B5DC9CAF2574DD8000751EF0 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC9CAB2574DB6E00751EF0 /* UITests.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
+		B5DC9CB02574DD8D00751EF0 /* TestPlans */ = {
 			isa = PBXGroup;
 			children = (
 				B5319C14256FA2D000B75403 /* UnitTests.xctestplan */,
@@ -223,6 +282,24 @@
 			productReference = B5319C02256F9CD900B75403 /* TimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B5DC9C9A2574D85C00751EF0 /* TimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DC9CA42574D85D00751EF0 /* Build configuration list for PBXNativeTarget "TimeUITests" */;
+			buildPhases = (
+				B5DC9C972574D85C00751EF0 /* Sources */,
+				B5DC9C982574D85C00751EF0 /* Frameworks */,
+				B5DC9C992574D85C00751EF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5DC9CA12574D85C00751EF0 /* PBXTargetDependency */,
+			);
+			name = TimeUITests;
+			productName = TimeUITests;
+			productReference = B5DC9C9B2574D85C00751EF0 /* TimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,6 +313,10 @@
 						CreatedOnToolsVersion = 12.1;
 					};
 					B5319C01256F9CD900B75403 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B51F0238254DC2B900F41559;
+					};
+					B5DC9C9A2574D85C00751EF0 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = B51F0238254DC2B900F41559;
 					};
@@ -256,6 +337,7 @@
 			targets = (
 				B51F0238254DC2B900F41559 /* Time */,
 				B5319C01256F9CD900B75403 /* TimeTests */,
+				B5DC9C9A2574D85C00751EF0 /* TimeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +359,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5DC9C992574D85C00751EF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -291,6 +380,7 @@
 				B51F0258254EF1D300F41559 /* TimeInputView.swift in Sources */,
 				B5319BF8256F96DA00B75403 /* LoggerExtension.swift in Sources */,
 				B51F023D254DC2B900F41559 /* TimeApp.swift in Sources */,
+				B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */,
 				B51F0251254DC7C600F41559 /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +393,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5DC9C972574D85C00751EF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56F59A1257513A000409A76 /* TimeNowTestModel.swift in Sources */,
+				B5DC9CBE2574F4DD00751EF0 /* TimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -310,6 +409,11 @@
 			isa = PBXTargetDependency;
 			target = B51F0238254DC2B900F41559 /* Time */;
 			targetProxy = B5319C07256F9CD900B75403 /* PBXContainerItemProxy */;
+		};
+		B5DC9CA12574D85C00751EF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51F0238254DC2B900F41559 /* Time */;
+			targetProxy = B5DC9CA02574D85C00751EF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,6 +626,46 @@
 			};
 			name = Release;
 		};
+		B5DC9CA22574D85D00751EF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94EK2XEZUL;
+				INFOPLIST_FILE = TimeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developermaris.TimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Time;
+			};
+			name = Debug;
+		};
+		B5DC9CA32574D85D00751EF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94EK2XEZUL;
+				INFOPLIST_FILE = TimeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developermaris.TimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Time;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,6 +692,15 @@
 			buildConfigurations = (
 				B5319C0A256F9CD900B75403 /* Debug */,
 				B5319C0B256F9CD900B75403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DC9CA42574D85D00751EF0 /* Build configuration list for PBXNativeTarget "TimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC9CA22574D85D00751EF0 /* Debug */,
+				B5DC9CA32574D85D00751EF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

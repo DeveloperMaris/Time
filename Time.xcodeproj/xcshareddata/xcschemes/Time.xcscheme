@@ -29,8 +29,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:TestPlans/UnitTests.xctestplan"
+            reference = "container:TimeTests/TestPlans/UnitTests.xctestplan"
             default = "YES">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:TimeUITests/TestPlans/UITests.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>
@@ -41,6 +44,16 @@
                BlueprintIdentifier = "B5319C01256F9CD900B75403"
                BuildableName = "TimeTests.xctest"
                BlueprintName = "TimeTests"
+               ReferencedContainer = "container:Time.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B5DC9C9A2574D85C00751EF0"
+               BuildableName = "TimeUITests.xctest"
+               BlueprintName = "TimeUITests"
                ReferencedContainer = "container:Time.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -66,6 +79,16 @@
             ReferencedContainer = "container:Time.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-enable-testing 1"
+            isEnabled = "NO">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <LocationScenarioReference
+         identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+         referenceType = "1">
+      </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

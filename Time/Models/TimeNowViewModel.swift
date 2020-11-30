@@ -38,6 +38,14 @@ class TimeNowViewModel: ObservableObject {
     /// This property will automatically update every second when then `startTimer` method is executed
     @Published private(set) var currentDate = Date()
 
+    init(currentDate: Date = .init(), startTimerAutomatically: Bool = true) {
+        self.currentDate = currentDate
+
+        if startTimerAutomatically {
+            startTimer()
+        }
+    }
+
     /// Begins timer countdown to update current date-time every second
     func startTimer() {
         guard timer == nil else { return }
@@ -67,3 +75,26 @@ class TimeNowViewModel: ObservableObject {
         invalidateTimer()
     }
 }
+
+#if DEBUG
+extension TimeNowViewModel {
+    static func makeForTesting() -> TimeNowViewModel {
+        let env = ProcessInfo.processInfo.environment
+        let decoder = JSONDecoder()
+
+        guard let string = env["TimeNowViewModel"] else {
+            return .init()
+        }
+
+        guard let data = Data(base64Encoded: string) else {
+            return .init()
+        }
+
+        guard let model = try? decoder.decode(TimeNowTestModel.self, from: data) else {
+            return .init()
+        }
+
+        return TimeNowViewModel(currentDate: model.date, startTimerAutomatically: model.startTimerAutomatically)
+    }
+}
+#endif
