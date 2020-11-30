@@ -10,22 +10,21 @@ import SwiftUI
 struct TimeNowView: View {
     typealias ViewModel = TimeNowViewModel
 
-    @StateObject var viewModel = ViewModel()
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         VStack {
             TimeView(date: viewModel.currentDate, formatter: ViewModel.dateFormatterFor12hours)
+                .accessibilityIdentifier("time-now.12-hour-format")
             SeparatorView(topCaption: "(12 hours)", bottomCaption: "(24 hours)")
             TimeView(date: viewModel.currentDate, formatter: ViewModel.dateFormatterFor24hours)
-        }
-        .onAppear {
-            viewModel.startTimer()
+                .accessibilityIdentifier("time-now.24-hour-format")
         }
     }
 }
 
 struct TimeNowView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeNowView()
+        TimeNowView(viewModel: .makeForTesting())
     }
 }

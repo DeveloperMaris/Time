@@ -1,0 +1,49 @@
+{
+  "configurations" : [
+    {
+      "id" : "538A10B4-C1ED-4D21-8EE7-82016C80CC66",
+      "name" : "Region-USA",
+      "options" : {
+        "language" : "en",
+        "region" : "US"
+      }
+    },
+    {
+      "id" : "4417EC32-0C28-4D10-AEDA-5BF4EE5913CD",
+      "name" : "Region-UK",
+      "options" : {
+        "language" : "en-GB",
+        "region" : "GB"
+      }
+    },
+    {
+      "id" : "4BFEA973-F367-4FFE-B469-881559742B3D",
+      "name" : "Region-Germany",
+      "options" : {
+        "language" : "de",
+        "region" : "DE"
+      }
+    },
+    {
+      "id" : "1126C0BD-9179-4534-85DA-A4375975DC61",
+      "name" : "Region-Israel",
+      "options" : {
+        "language" : "he",
+        "region" : "IL"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Time.xcodeproj",
+        "identifier" : "B5DC9C9A2574D85C00751EF0",
+        "name" : "TimeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
