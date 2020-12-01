@@ -24,8 +24,10 @@ struct TimeNowView: View {
     }
 }
 
+#if DEBUG
 struct TimeNowView_Previews: PreviewProvider {
     static var previews: some View {
         TimeNowView(viewModel: .makeForTesting())
     }
 }
+#endif
