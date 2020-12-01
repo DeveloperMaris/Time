@@ -17,22 +17,14 @@ struct TimeView: View {
     }
 
     var body: some View {
-        VStack {
-            Text(dateString)
-                .bold()
-                .font(.largeTitle)
-        }
+        Text(dateString)
+            .bold()
+            .font(.largeTitle)
     }
 }
 
 struct TimeView_Previews: PreviewProvider {
-    static let formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "h:mm a"
-        return formatter
-    }()
-
     static var previews: some View {
-        TimeView(date: Date(), formatter: formatter)
+        TimeView(date: Date(), formatter: TimeNowViewModel.dateFormatterFor12hours)
     }
 }

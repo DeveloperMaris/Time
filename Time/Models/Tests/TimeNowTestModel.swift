@@ -10,6 +10,8 @@ import Foundation
 
 #if DEBUG
 struct TimeNowTestModel: Codable {
+    static let key = "TimeNowTestModel"
+
     var date: Date
     var startTimerAutomatically: Bool
 }
