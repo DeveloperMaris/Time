@@ -36,7 +36,7 @@ class TimeNowViewModel: ObservableObject {
     /// Provides current date
     ///
     /// This property will automatically update every second when then `startTimer` method is executed
-    @Published private(set) var currentDate = Date()
+    @Published private(set) var currentDate: Date
 
     init(currentDate: Date = .init(), startTimerAutomatically: Bool = true) {
         self.currentDate = currentDate
