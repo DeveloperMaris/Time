@@ -6,8 +6,8 @@
 //  Copyright © 2020 Maris Lagzdins. All rights reserved.
 //
 
-import Foundation
 import Combine
+import Foundation
 import os.log
 
 class TimeNowViewModel: ObservableObject {
@@ -31,7 +31,6 @@ class TimeNowViewModel: ObservableObject {
     }()
 
     private let logger = Logger.make(category: "TimeNowViewModel")
-
     private var timer: AnyCancellable?
 
     /// Provides current date
@@ -61,10 +60,13 @@ class TimeNowViewModel: ObservableObject {
             }
     }
 
+    /// Set current date parameter by providing a new value
+    /// - Parameter date: new Date value
     func set(date: Date) {
         currentDate = date
     }
 
+    /// Invalidate active timer
     func invalidateTimer() {
         logger.debug("Invalidate timer")
 
@@ -83,7 +85,7 @@ extension TimeNowViewModel {
         let env = ProcessInfo.processInfo.environment
         let decoder = JSONDecoder()
 
-        guard let string = env["TimeNowViewModel"] else {
+        guard let string = env[TimeNowTestModel.key] else {
             return .init()
         }
 

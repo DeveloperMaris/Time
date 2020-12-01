@@ -106,12 +106,14 @@ class TimeUITests: XCTestCase {
 }
 
 private extension TimeUITests {
+    static let testingKey = "-enable-testing"
+
     func launch(appWithTestModel testModel: String) -> XCUIApplication {
         // Launch application
         let app = XCUIApplication()
-        app.launchArguments = ["-enable-testing"]
+        app.launchArguments = [Self.testingKey]
         app.launchEnvironment = [
-            "TimeNowViewModel": testModel
+            TimeNowTestModel.key: testModel
         ]
         app.launch()
         return app
