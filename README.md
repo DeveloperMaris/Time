@@ -15,9 +15,7 @@ Application is available on [AppStore](https://apps.apple.com/us/app/to-time/id1
 
 # Screenshots
 
-<img src="./Screenshots/screenshot1.png">
-
-<img src="./Screenshots/screenshot2.png">
+<img src="./Screenshots/screenshot1.png"  width="400"> <img src="./Screenshots/screenshot2.png" width="400">
 
 # Licence
 
