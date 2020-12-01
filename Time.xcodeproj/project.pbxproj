@@ -308,6 +308,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = "Maris Lagzdins";
 				TargetAttributes = {
 					B51F0238254DC2B900F41559 = {
 						CreatedOnToolsVersion = 12.1;

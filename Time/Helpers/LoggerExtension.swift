@@ -3,6 +3,7 @@
 //  Time
 //
 //  Created by Maris Lagzdins on 26/11/2020.
+//  Copyright © 2020 Maris Lagzdins. All rights reserved.
 //
 
 import Foundation

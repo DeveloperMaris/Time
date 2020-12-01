@@ -3,6 +3,7 @@
 //  TimeUITests
 //
 //  Created by Maris Lagzdins on 30/11/2020.
+//  Copyright © 2020 Maris Lagzdins. All rights reserved.
 //
 
 @testable
