@@ -2,8 +2,8 @@
 
 # To Time
 
-iOS application, which shows current time both in 12-hour and 24-hour format. 
-Application user has the possibility to set a specific time and convert it from 12-hours to 24-hours and back.
+The application shows the current time in 12-hour and 24-hour format.
+It provides the possibility to set a specific time and convert it from 12-hour to 24-hour format and back.
 
 # Requirements
 
