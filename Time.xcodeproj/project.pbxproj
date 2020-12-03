@@ -18,6 +18,8 @@
 		B5319BED256F916900B75403 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319BEC256F916900B75403 /* SeparatorView.swift */; };
 		B5319BF8256F96DA00B75403 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319BF7256F96DA00B75403 /* LoggerExtension.swift */; };
 		B5319C05256F9CD900B75403 /* TimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */; };
+		B561E58F2578CA77004C9408 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */; };
+		B561E5B32578DE36004C9408 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E5B22578DE36004C9408 /* DateFormatterTests.swift */; };
 		B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
 		B56F59A1257513A000409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
 		B5DC9CBE2574F4DD00751EF0 /* TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */; };
@@ -57,6 +59,8 @@
 		B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewModelTests.swift; sourceTree = "<group>"; };
 		B5319C06256F9CD900B75403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5319C14256FA2D000B75403 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		B561E5B22578DE36004C9408 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		B56F59812574F72F00409A76 /* TimeNowTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowTestModel.swift; sourceTree = "<group>"; };
 		B5DC9C9B2574D85C00751EF0 /* TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUITests.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B5319BF7256F96DA00B75403 /* LoggerExtension.swift */,
+				B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */,
+				B561E5B22578DE36004C9408 /* DateFormatterTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			files = (
 				B51F023F254DC2B900F41559 /* TimeNowView.swift in Sources */,
 				B51F0254254DCA4D00F41559 /* TimeNowViewModel.swift in Sources */,
+				B561E58F2578CA77004C9408 /* DateFormatterExtension.swift in Sources */,
 				B5319BED256F916900B75403 /* SeparatorView.swift in Sources */,
 				B5319BE9256EE30D00B75403 /* ContentView.swift in Sources */,
 				B51F0258254EF1D300F41559 /* TimeInputView.swift in Sources */,
@@ -390,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B561E5B32578DE36004C9408 /* DateFormatterTests.swift in Sources */,
 				B5319C05256F9CD900B75403 /* TimeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

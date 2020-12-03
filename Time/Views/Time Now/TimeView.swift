@@ -12,12 +12,8 @@ struct TimeView: View {
     let date: Date
     let formatter: DateFormatter
 
-    private var dateString: String {
-        formatter.string(from: date)
-    }
-
     var body: some View {
-        Text(dateString)
+        Text(date, formatter: formatter)
             .bold()
             .font(.largeTitle)
     }
@@ -25,6 +21,6 @@ struct TimeView: View {
 
 struct TimeView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeView(date: Date(), formatter: TimeNowViewModel.dateFormatterFor12hours)
+        TimeView(date: Date(), formatter: .for12hours)
     }
 }
