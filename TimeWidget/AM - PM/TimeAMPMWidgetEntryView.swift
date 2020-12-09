@@ -15,8 +15,8 @@ struct TimeAMPMWidgetEntryView : View {
     var body: some View {
         HStack {
             Text("AM")
-                .font(entry.isAfterMidday == true ? .caption : .title)
-                .fontWeight(entry.isAfterMidday == true ? .light : .bold)
+                .font(entry.isAfterMidday == false ? .title : .caption)
+                .fontWeight(entry.isAfterMidday == false ? .bold : .light)
             Text("/")
                 .padding(.bottom, 2)
             Text("PM")

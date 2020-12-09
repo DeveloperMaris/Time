@@ -1,6 +1,6 @@
 //
 //  TimeAMPMProvider.swift
-//  Time
+//  TimeWidgetExtension
 //
 //  Created by Maris Lagzdins on 04/12/2020.
 //  Copyright © 2020 Maris Lagzdins. All rights reserved.
@@ -17,28 +17,27 @@ struct TimeAMPMProvider: TimelineProvider {
 
     func getSnapshot(in context: Context, completion: @escaping (Entry) -> ()) {
         let calendar = Calendar.current
-        let now = Date()
+        let date = Date()
 
-        let hour = calendar.component(.hour, from: now)
+        let hour = calendar.component(.hour, from: date)
 
-        let entry = TimeAMPMEntity(date: Date(), isAfterMidday: hour >= 12)
+        let entry = TimeAMPMEntity(date: date, isAfterMidday: hour >= 12)
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries = [TimeAMPMEntity]()
 
-        let calendar = Calendar.current
-        let today = Date()
-        let midnight = calendar.startOfDay(for: today)
-        let midday = calendar.date(bySetting: .hour, value: 12, of: midnight)!
+        let date = Date()
+        let midnight = date.midnight()
+        let midday = date.midday()
 
         entries.append(TimeAMPMEntity(date: midnight, isAfterMidday: false))
         entries.append(TimeAMPMEntity(date: midday, isAfterMidday: true))
 
-        let nextUpdateDate = calendar.date(from: DateComponents(hour: 23))!
+        let nextTimelineUpdate = midday.addingTimeInterval(3600)
+        let timeline = Timeline(entries: entries, policy: .after(nextTimelineUpdate))
 
-        let timeline = Timeline(entries: entries, policy: .after(nextUpdateDate))
         completion(timeline)
     }
 }

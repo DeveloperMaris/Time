@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50455EE2580B03500B13D15 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455ED2580B03500B13D15 /* DateExtension.swift */; };
+		B50455F82580B8F900B13D15 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455F72580B8F900B13D15 /* DateTests.swift */; };
+		B50456002580B94E00B13D15 /* TimeNowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455FD2580B94E00B13D15 /* TimeNowProvider.swift */; };
+		B50456012580B94E00B13D15 /* TimeNowEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455FE2580B94E00B13D15 /* TimeNowEntry.swift */; };
+		B50456022580B94E00B13D15 /* TimeNowWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455FF2580B94E00B13D15 /* TimeNowWidgetEntryView.swift */; };
+		B504560A2580B96100B13D15 /* TimeAMPMWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50456072580B96100B13D15 /* TimeAMPMWidgetEntryView.swift */; };
+		B504560B2580B96100B13D15 /* TimeAMPMEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50456082580B96100B13D15 /* TimeAMPMEntity.swift */; };
+		B504560C2580B96100B13D15 /* TimeAMPMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50456092580B96100B13D15 /* TimeAMPMProvider.swift */; };
+		B50456202580CBDB00B13D15 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455ED2580B03500B13D15 /* DateExtension.swift */; };
 		B51F023D254DC2B900F41559 /* TimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F023C254DC2B900F41559 /* TimeApp.swift */; };
 		B51F023F254DC2B900F41559 /* TimeNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F023E254DC2B900F41559 /* TimeNowView.swift */; };
 		B51F0241254DC2BA00F41559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51F0240254DC2BA00F41559 /* Assets.xcassets */; };
@@ -26,12 +35,6 @@
 		B561E5DD257A1D25004C9408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E5DC257A1D25004C9408 /* Assets.xcassets */; };
 		B561E5E1257A1D25004C9408 /* TimeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B561E5D3257A1D25004C9408 /* TimeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B561E5EA257A1E60004C9408 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */; };
-		B561E612257A3DCC004C9408 /* TimeNowWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E608257A3D43004C9408 /* TimeNowWidgetEntryView.swift */; };
-		B561E617257A3DCF004C9408 /* TimeNowEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E602257A3D25004C9408 /* TimeNowEntry.swift */; };
-		B561E61C257A3DD2004C9408 /* TimeNowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E5FC257A3CEE004C9408 /* TimeNowProvider.swift */; };
-		B561E634257A3F88004C9408 /* TimeAMPMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E626257A3F84004C9408 /* TimeAMPMProvider.swift */; };
-		B561E63A257A3FAA004C9408 /* TimeAMPMEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E639257A3FAA004C9408 /* TimeAMPMEntity.swift */; };
-		B561E640257A4064004C9408 /* TimeAMPMWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E63F257A4064004C9408 /* TimeAMPMWidgetEntryView.swift */; };
 		B561E655257A4254004C9408 /* TimeNowWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E654257A4254004C9408 /* TimeNowWidget.swift */; };
 		B561E65B257A427F004C9408 /* TimeAMPMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E65A257A427F004C9408 /* TimeAMPMWidget.swift */; };
 		B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
@@ -78,6 +81,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B50455ED2580B03500B13D15 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		B50455F72580B8F900B13D15 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		B50455FD2580B94E00B13D15 /* TimeNowProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeNowProvider.swift; sourceTree = "<group>"; };
+		B50455FE2580B94E00B13D15 /* TimeNowEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeNowEntry.swift; sourceTree = "<group>"; };
+		B50455FF2580B94E00B13D15 /* TimeNowWidgetEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeNowWidgetEntryView.swift; sourceTree = "<group>"; };
+		B50456072580B96100B13D15 /* TimeAMPMWidgetEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAMPMWidgetEntryView.swift; sourceTree = "<group>"; };
+		B50456082580B96100B13D15 /* TimeAMPMEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAMPMEntity.swift; sourceTree = "<group>"; };
+		B50456092580B96100B13D15 /* TimeAMPMProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAMPMProvider.swift; sourceTree = "<group>"; };
 		B51F0239254DC2B900F41559 /* Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51F023C254DC2B900F41559 /* TimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeApp.swift; sourceTree = "<group>"; };
 		B51F023E254DC2B900F41559 /* TimeNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowView.swift; sourceTree = "<group>"; };
@@ -102,12 +113,6 @@
 		B561E5DA257A1D25004C9408 /* TimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeWidget.swift; sourceTree = "<group>"; };
 		B561E5DC257A1D25004C9408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B561E5DE257A1D25004C9408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B561E5FC257A3CEE004C9408 /* TimeNowProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeNowProvider.swift; path = TimeTests/Tests/TimeNowProvider.swift; sourceTree = SOURCE_ROOT; };
-		B561E602257A3D25004C9408 /* TimeNowEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeNowEntry.swift; path = TimeTests/Tests/TimeNowEntry.swift; sourceTree = SOURCE_ROOT; };
-		B561E608257A3D43004C9408 /* TimeNowWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeNowWidgetEntryView.swift; path = TimeTests/Tests/TimeNowWidgetEntryView.swift; sourceTree = SOURCE_ROOT; };
-		B561E626257A3F84004C9408 /* TimeAMPMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeAMPMProvider.swift; path = TimeTests/Tests/TimeAMPMProvider.swift; sourceTree = SOURCE_ROOT; };
-		B561E639257A3FAA004C9408 /* TimeAMPMEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeAMPMEntity.swift; path = TimeTests/Tests/TimeAMPMEntity.swift; sourceTree = SOURCE_ROOT; };
-		B561E63F257A4064004C9408 /* TimeAMPMWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeAMPMWidgetEntryView.swift; path = TimeTests/Tests/TimeAMPMWidgetEntryView.swift; sourceTree = SOURCE_ROOT; };
 		B561E654257A4254004C9408 /* TimeNowWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowWidget.swift; sourceTree = "<group>"; };
 		B561E65A257A427F004C9408 /* TimeAMPMWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAMPMWidget.swift; sourceTree = "<group>"; };
 		B56F59812574F72F00409A76 /* TimeNowTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowTestModel.swift; sourceTree = "<group>"; };
@@ -246,6 +251,7 @@
 			children = (
 				B5319BF7256F96DA00B75403 /* LoggerExtension.swift */,
 				B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */,
+				B50455ED2580B03500B13D15 /* DateExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -263,8 +269,9 @@
 		B5319C10256FA28700B75403 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */,
 				B561E5B22578DE36004C9408 /* DateFormatterTests.swift */,
+				B50455F72580B8F900B13D15 /* DateTests.swift */,
+				B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -293,10 +300,10 @@
 		B561E5FB257A3CE0004C9408 /* Time Now */ = {
 			isa = PBXGroup;
 			children = (
-				B561E602257A3D25004C9408 /* TimeNowEntry.swift */,
-				B561E5FC257A3CEE004C9408 /* TimeNowProvider.swift */,
+				B50455FE2580B94E00B13D15 /* TimeNowEntry.swift */,
+				B50455FD2580B94E00B13D15 /* TimeNowProvider.swift */,
 				B561E654257A4254004C9408 /* TimeNowWidget.swift */,
-				B561E608257A3D43004C9408 /* TimeNowWidgetEntryView.swift */,
+				B50455FF2580B94E00B13D15 /* TimeNowWidgetEntryView.swift */,
 			);
 			path = "Time Now";
 			sourceTree = "<group>";
@@ -304,10 +311,10 @@
 		B561E625257A3F5F004C9408 /* AM - PM */ = {
 			isa = PBXGroup;
 			children = (
-				B561E639257A3FAA004C9408 /* TimeAMPMEntity.swift */,
-				B561E626257A3F84004C9408 /* TimeAMPMProvider.swift */,
+				B50456082580B96100B13D15 /* TimeAMPMEntity.swift */,
+				B50456092580B96100B13D15 /* TimeAMPMProvider.swift */,
 				B561E65A257A427F004C9408 /* TimeAMPMWidget.swift */,
-				B561E63F257A4064004C9408 /* TimeAMPMWidgetEntryView.swift */,
+				B50456072580B96100B13D15 /* TimeAMPMWidgetEntryView.swift */,
 			);
 			path = "AM - PM";
 			sourceTree = "<group>";
@@ -529,6 +536,7 @@
 				B5319BED256F916900B75403 /* SeparatorView.swift in Sources */,
 				B5319BE9256EE30D00B75403 /* ContentView.swift in Sources */,
 				B51F0258254EF1D300F41559 /* TimeInputView.swift in Sources */,
+				B50456202580CBDB00B13D15 /* DateExtension.swift in Sources */,
 				B5319BF8256F96DA00B75403 /* LoggerExtension.swift in Sources */,
 				B51F023D254DC2B900F41559 /* TimeApp.swift in Sources */,
 				B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */,
@@ -541,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B561E5B32578DE36004C9408 /* DateFormatterTests.swift in Sources */,
+				B50455F82580B8F900B13D15 /* DateTests.swift in Sources */,
 				B5319C05256F9CD900B75403 /* TimeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,16 +558,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B561E634257A3F88004C9408 /* TimeAMPMProvider.swift in Sources */,
+				B50455EE2580B03500B13D15 /* DateExtension.swift in Sources */,
 				B561E5EA257A1E60004C9408 /* DateFormatterExtension.swift in Sources */,
+				B50456002580B94E00B13D15 /* TimeNowProvider.swift in Sources */,
 				B561E5DB257A1D25004C9408 /* TimeWidget.swift in Sources */,
-				B561E640257A4064004C9408 /* TimeAMPMWidgetEntryView.swift in Sources */,
-				B561E61C257A3DD2004C9408 /* TimeNowProvider.swift in Sources */,
+				B504560A2580B96100B13D15 /* TimeAMPMWidgetEntryView.swift in Sources */,
+				B50456012580B94E00B13D15 /* TimeNowEntry.swift in Sources */,
+				B504560C2580B96100B13D15 /* TimeAMPMProvider.swift in Sources */,
+				B504560B2580B96100B13D15 /* TimeAMPMEntity.swift in Sources */,
 				B561E65B257A427F004C9408 /* TimeAMPMWidget.swift in Sources */,
-				B561E617257A3DCF004C9408 /* TimeNowEntry.swift in Sources */,
-				B561E612257A3DCC004C9408 /* TimeNowWidgetEntryView.swift in Sources */,
-				B561E63A257A3FAA004C9408 /* TimeAMPMEntity.swift in Sources */,
 				B561E655257A4254004C9408 /* TimeNowWidget.swift in Sources */,
+				B50456022580B94E00B13D15 /* TimeNowWidgetEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
