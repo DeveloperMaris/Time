@@ -14,16 +14,20 @@ struct TimeNowWidgetEntryView : View {
 
     var body: some View {
         VStack {
-            Text(entry.date, formatter: DateFormatter.for12hours)
+            Text(dateString(using: .for12hours))
                 .bold()
 
             Color.primary
                 .frame(width: 100, height: 1)
                 .padding(.bottom, 4)
 
-            Text(entry.date, formatter: DateFormatter.for24hours)
+            Text(dateString(using: .for24hours))
                 .bold()
         }
+    }
+
+    func dateString(using formatter: DateFormatter) -> String {
+        formatter.string(from: entry.date)
     }
 }
 

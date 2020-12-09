@@ -21,7 +21,7 @@ class DateFormatterTests: XCTestCase {
 
     func test12HourDateFormatterLocale() {
         // Given
-        let locale = "en_US"
+        let locale = "en_US_POSIX"
 
         // Then
         XCTAssertEqual(DateFormatter.for12hours.locale.identifier, locale)
@@ -37,7 +37,7 @@ class DateFormatterTests: XCTestCase {
 
     func test24HourDateFormatterLocale() {
         // Given
-        let locale = "en_US"
+        let locale = "en_US_POSIX"
 
         // Then
         XCTAssertEqual(DateFormatter.for24hours.locale.identifier, locale)
