@@ -11,11 +11,22 @@ import Time
 import XCTest
 
 class DateTests: XCTestCase {
+    var calendar: Calendar!
+
+    override func setUp() {
+        calendar = Calendar.current
+        calendar.timeZone = TimeZone(abbreviation: "EET")!
+    }
+
+    override func tearDown() {
+        calendar = nil
+    }
+
     func testMidnightContainsCorrectTime() {
         // Given
         let givenComponents = DateComponents(year: 2020, month: 1, day: 1, hour: 9, minute: 41, second: 0)
         let resultComponents = DateComponents(year: 2020, month: 1, day: 1, hour: 0, minute: 0, second: 0)
-        let sut = Calendar.current.date(from: givenComponents)!
+        let sut = calendar.date(from: givenComponents)!
 
         // When
         let date = sut.midnight()
@@ -28,7 +39,7 @@ class DateTests: XCTestCase {
         // Given
         let givenComponents = DateComponents(year: 2020, month: 1, day: 1, hour: 9, minute: 41, second: 0)
         let resultComponents = DateComponents(year: 2020, month: 1, day: 1, hour: 12, minute: 0, second: 0)
-        let sut = Calendar.current.date(from: givenComponents)!
+        let sut = calendar.date(from: givenComponents)!
 
         // When
         let date = sut.midday()
@@ -41,7 +52,7 @@ class DateTests: XCTestCase {
         // Given
         let givenComponents = DateComponents(year: 2020, month: 1, day: 1, hour: 9, minute: 41, second: 0)
         let resultComponents = DateComponents(year: 2020, month: 1, day: 2, hour: 0, minute: 0, second: 0)
-        let sut = Calendar.current.date(from: givenComponents)!
+        let sut = calendar.date(from: givenComponents)!
 
         // When
         let date = sut.nextMidnight()
@@ -54,7 +65,7 @@ class DateTests: XCTestCase {
         // Given
         let givenComponents = DateComponents(year: 2020, month: 1, day: 31, hour: 9, minute: 41, second: 0)
         let resultComponents = DateComponents(year: 2020, month: 2, day: 1, hour: 0, minute: 0, second: 0)
-        let sut = Calendar.current.date(from: givenComponents)!
+        let sut = calendar.date(from: givenComponents)!
 
         // When
         let date = sut.nextMidnight()
@@ -65,8 +76,8 @@ class DateTests: XCTestCase {
 
     func testMinutesInOrdinaryDay() {
         // Given
-        let givenComponents = DateComponents(timeZone: TimeZone(abbreviation: "EET"), year: 2020, month: 1, day: 31, hour: 9, minute: 41, second: 0)
-        let sut = Calendar.current.date(from: givenComponents)!
+        let givenComponents = DateComponents(year: 2020, month: 1, day: 31, hour: 9, minute: 41, second: 0)
+        let sut = calendar.date(from: givenComponents)!
 
         // When
         let minutes = sut.minutesInTotal()
@@ -77,11 +88,11 @@ class DateTests: XCTestCase {
 
     func testMinutesInDaylightSavingDate() {
         // Given
-        let givenComponents = DateComponents(timeZone: TimeZone(abbreviation: "EET"), year: 2020, month: 10, day: 25, hour: 9, minute: 41, second: 0)
-        let sut = Calendar.current.date(from: givenComponents)!
+        let givenComponents = DateComponents(year: 2020, month: 10, day: 25, hour: 9, minute: 41, second: 0)
+        let sut = calendar.date(from: givenComponents)!
 
         // When
-        let minutes = sut.minutesInTotal()
+        let minutes = sut.minutesInTotal(in: calendar)
 
         // Then
         XCTAssertEqual(minutes, 1500)

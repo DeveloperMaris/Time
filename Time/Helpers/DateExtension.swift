@@ -14,17 +14,17 @@ public extension Date {
     }
 
     func midday(in calendar: Calendar = .current) -> Date {
-        calendar.date(bySetting: .hour, value: 12, of: midnight())!
+        calendar.date(bySetting: .hour, value: 12, of: midnight(in: calendar))!
     }
 
     func nextMidnight(in calendar: Calendar = .current) -> Date {
-        let midnight = self.midnight()
+        let midnight = self.midnight(in: calendar)
         let components = calendar.dateComponents([.hour, .minute, .second, .nanosecond], from: midnight)
         return calendar.nextDate(after: midnight, matching: components, matchingPolicy: .nextTime)!
     }
 
     func minutesInTotal(in calendar: Calendar = .current) -> Int {
-        let difference = calendar.dateComponents([.minute], from: midnight(), to: nextMidnight())
+        let difference = calendar.dateComponents([.minute], from: midnight(in: calendar), to: nextMidnight(in: calendar))
         return difference.minute!
     }
 }
