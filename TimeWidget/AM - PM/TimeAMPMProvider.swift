@@ -31,12 +31,13 @@ struct TimeAMPMProvider: TimelineProvider {
         let date = Date()
         let midnight = date.midnight()
         let midday = date.midday()
+        let nextMidnight = date.nextMidnight()
 
         entries.append(TimeAMPMEntity(date: midnight, isAfterMidday: false))
         entries.append(TimeAMPMEntity(date: midday, isAfterMidday: true))
+        entries.append(TimeAMPMEntity(date: nextMidnight, isAfterMidday: false))
 
-        let nextTimelineUpdate = midday.addingTimeInterval(3600)
-        let timeline = Timeline(entries: entries, policy: .after(nextTimelineUpdate))
+        let timeline = Timeline(entries: entries, policy: .after(nextMidnight))
 
         completion(timeline)
     }
