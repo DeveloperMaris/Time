@@ -12,23 +12,9 @@ import os.log
 
 class TimeNowViewModel: ObservableObject {
     /// 12-Hour date formatter
-    static let dateFormatterFor12hours: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.dateFormat = "h:mm a"
-        return formatter
-    }()
-
+    static let dateFormatterFor12hours: DateFormatter = .for12hours
     /// 24-Hour date formatter
-    static let dateFormatterFor24hours: DateFormatter = {
-        let formatter = DateFormatter()
-        // Need to set US locale, because without it some other locales
-        // can start to display 12 hour format instead of 24 hour format
-        // depending on the device "24-Hour Time" setting.
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.dateFormat = "HH:mm"
-        return formatter
-    }()
+    static let dateFormatterFor24hours: DateFormatter = .for24hours
 
     private let logger = Logger.make(category: "TimeNowViewModel")
     private var timer: AnyCancellable?

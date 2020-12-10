@@ -17,6 +17,10 @@ struct TimeView: View {
     }
 
     var body: some View {
+        // Can't use `Text(Subject, formatter: Formatter)` for now.
+        // It seems that SwiftUI changes the formatter locale to the device's current locale,
+        // even if a fixed locale is set.
+        // Tested with Xcode 12.2, could be that in future releases it changes.
         Text(dateString)
             .bold()
             .font(.largeTitle)
@@ -25,6 +29,6 @@ struct TimeView: View {
 
 struct TimeView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeView(date: Date(), formatter: TimeNowViewModel.dateFormatterFor12hours)
+        TimeView(date: Date(), formatter: .for12hours)
     }
 }

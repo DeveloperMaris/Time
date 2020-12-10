@@ -10,10 +10,18 @@
     },
     {
       "id" : "AFD6B264-478E-453D-A5E8-B709875F1F84",
-      "name" : "Region-Latvia",
+      "name" : "Region-UK",
       "options" : {
         "language" : "en-GB",
-        "region" : "LV"
+        "region" : "GB"
+      }
+    },
+    {
+      "id" : "7465F480-0F5F-4418-806B-20C5CE0144F8",
+      "name" : "Region-German",
+      "options" : {
+        "language" : "de",
+        "region" : "DE"
       }
     }
   ],
