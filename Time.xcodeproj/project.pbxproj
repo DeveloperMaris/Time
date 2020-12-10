@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50455EE2580B03500B13D15 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455ED2580B03500B13D15 /* DateExtension.swift */; };
+		B50455F82580B8F900B13D15 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455F72580B8F900B13D15 /* DateTests.swift */; };
+		B50456002580B94E00B13D15 /* TimeNowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455FD2580B94E00B13D15 /* TimeNowProvider.swift */; };
+		B50456012580B94E00B13D15 /* TimeNowEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455FE2580B94E00B13D15 /* TimeNowEntry.swift */; };
+		B50456022580B94E00B13D15 /* TimeNowWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455FF2580B94E00B13D15 /* TimeNowWidgetEntryView.swift */; };
+		B504560A2580B96100B13D15 /* TimeAMPMWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50456072580B96100B13D15 /* TimeAMPMWidgetEntryView.swift */; };
+		B504560B2580B96100B13D15 /* TimeAMPMEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50456082580B96100B13D15 /* TimeAMPMEntity.swift */; };
+		B504560C2580B96100B13D15 /* TimeAMPMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50456092580B96100B13D15 /* TimeAMPMProvider.swift */; };
+		B50456202580CBDB00B13D15 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50455ED2580B03500B13D15 /* DateExtension.swift */; };
 		B51F023D254DC2B900F41559 /* TimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F023C254DC2B900F41559 /* TimeApp.swift */; };
 		B51F023F254DC2B900F41559 /* TimeNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F023E254DC2B900F41559 /* TimeNowView.swift */; };
 		B51F0241254DC2BA00F41559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51F0240254DC2BA00F41559 /* Assets.xcassets */; };
@@ -20,6 +29,14 @@
 		B5319C05256F9CD900B75403 /* TimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */; };
 		B561E58F2578CA77004C9408 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */; };
 		B561E5B32578DE36004C9408 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E5B22578DE36004C9408 /* DateFormatterTests.swift */; };
+		B561E5D6257A1D25004C9408 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B561E5D5257A1D25004C9408 /* WidgetKit.framework */; };
+		B561E5D8257A1D25004C9408 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B561E5D7257A1D25004C9408 /* SwiftUI.framework */; };
+		B561E5DB257A1D25004C9408 /* TimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E5DA257A1D25004C9408 /* TimeWidget.swift */; };
+		B561E5DD257A1D25004C9408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E5DC257A1D25004C9408 /* Assets.xcassets */; };
+		B561E5E1257A1D25004C9408 /* TimeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B561E5D3257A1D25004C9408 /* TimeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B561E5EA257A1E60004C9408 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */; };
+		B561E655257A4254004C9408 /* TimeNowWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E654257A4254004C9408 /* TimeNowWidget.swift */; };
+		B561E65B257A427F004C9408 /* TimeAMPMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561E65A257A427F004C9408 /* TimeAMPMWidget.swift */; };
 		B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
 		B56F59A1257513A000409A76 /* TimeNowTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F59812574F72F00409A76 /* TimeNowTestModel.swift */; };
 		B5DC9CBE2574F4DD00751EF0 /* TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */; };
@@ -33,6 +50,13 @@
 			remoteGlobalIDString = B51F0238254DC2B900F41559;
 			remoteInfo = Time;
 		};
+		B561E5DF257A1D25004C9408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51F0231254DC2B900F41559 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B561E5D2257A1D25004C9408;
+			remoteInfo = TimeWidgetExtension;
+		};
 		B5DC9CA02574D85C00751EF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B51F0231254DC2B900F41559 /* Project object */;
@@ -42,7 +66,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B561E5E2257A1D25004C9408 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B561E5E1257A1D25004C9408 /* TimeWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B50455ED2580B03500B13D15 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		B50455F72580B8F900B13D15 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		B50455FD2580B94E00B13D15 /* TimeNowProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeNowProvider.swift; sourceTree = "<group>"; };
+		B50455FE2580B94E00B13D15 /* TimeNowEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeNowEntry.swift; sourceTree = "<group>"; };
+		B50455FF2580B94E00B13D15 /* TimeNowWidgetEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeNowWidgetEntryView.swift; sourceTree = "<group>"; };
+		B50456072580B96100B13D15 /* TimeAMPMWidgetEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAMPMWidgetEntryView.swift; sourceTree = "<group>"; };
+		B50456082580B96100B13D15 /* TimeAMPMEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAMPMEntity.swift; sourceTree = "<group>"; };
+		B50456092580B96100B13D15 /* TimeAMPMProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAMPMProvider.swift; sourceTree = "<group>"; };
 		B51F0239254DC2B900F41559 /* Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51F023C254DC2B900F41559 /* TimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeApp.swift; sourceTree = "<group>"; };
 		B51F023E254DC2B900F41559 /* TimeNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowView.swift; sourceTree = "<group>"; };
@@ -61,6 +107,14 @@
 		B5319C14256FA2D000B75403 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 		B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 		B561E5B22578DE36004C9408 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		B561E5D3257A1D25004C9408 /* TimeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B561E5D5257A1D25004C9408 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B561E5D7257A1D25004C9408 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B561E5DA257A1D25004C9408 /* TimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeWidget.swift; sourceTree = "<group>"; };
+		B561E5DC257A1D25004C9408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B561E5DE257A1D25004C9408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B561E654257A4254004C9408 /* TimeNowWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowWidget.swift; sourceTree = "<group>"; };
+		B561E65A257A427F004C9408 /* TimeAMPMWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAMPMWidget.swift; sourceTree = "<group>"; };
 		B56F59812574F72F00409A76 /* TimeNowTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNowTestModel.swift; sourceTree = "<group>"; };
 		B5DC9C9B2574D85C00751EF0 /* TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DC9C9D2574D85C00751EF0 /* TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUITests.swift; sourceTree = "<group>"; };
@@ -83,6 +137,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B561E5D0257A1D25004C9408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B561E5D8257A1D25004C9408 /* SwiftUI.framework in Frameworks */,
+				B561E5D6257A1D25004C9408 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5DC9C982574D85C00751EF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +162,8 @@
 				B51F023B254DC2B900F41559 /* Time */,
 				B5319C03256F9CD900B75403 /* TimeTests */,
 				B5DC9C9C2574D85C00751EF0 /* TimeUITests */,
+				B561E5D9257A1D25004C9408 /* TimeWidget */,
+				B561E5D4257A1D25004C9408 /* Frameworks */,
 				B51F023A254DC2B900F41559 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +174,7 @@
 				B51F0239254DC2B900F41559 /* Time.app */,
 				B5319C02256F9CD900B75403 /* TimeTests.xctest */,
 				B5DC9C9B2574D85C00751EF0 /* TimeUITests.xctest */,
+				B561E5D3257A1D25004C9408 /* TimeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +251,7 @@
 			children = (
 				B5319BF7256F96DA00B75403 /* LoggerExtension.swift */,
 				B561E58E2578CA77004C9408 /* DateFormatterExtension.swift */,
+				B50455ED2580B03500B13D15 /* DateExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -202,10 +269,62 @@
 		B5319C10256FA28700B75403 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */,
 				B561E5B22578DE36004C9408 /* DateFormatterTests.swift */,
+				B50455F72580B8F900B13D15 /* DateTests.swift */,
+				B5319C04256F9CD900B75403 /* TimeViewModelTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		B561E5D4257A1D25004C9408 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B561E5D5257A1D25004C9408 /* WidgetKit.framework */,
+				B561E5D7257A1D25004C9408 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B561E5D9257A1D25004C9408 /* TimeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B561E5DE257A1D25004C9408 /* Info.plist */,
+				B561E5DA257A1D25004C9408 /* TimeWidget.swift */,
+				B561E625257A3F5F004C9408 /* AM - PM */,
+				B561E649257A41C8004C9408 /* Resources */,
+				B561E5FB257A3CE0004C9408 /* Time Now */,
+			);
+			path = TimeWidget;
+			sourceTree = "<group>";
+		};
+		B561E5FB257A3CE0004C9408 /* Time Now */ = {
+			isa = PBXGroup;
+			children = (
+				B50455FE2580B94E00B13D15 /* TimeNowEntry.swift */,
+				B50455FD2580B94E00B13D15 /* TimeNowProvider.swift */,
+				B561E654257A4254004C9408 /* TimeNowWidget.swift */,
+				B50455FF2580B94E00B13D15 /* TimeNowWidgetEntryView.swift */,
+			);
+			path = "Time Now";
+			sourceTree = "<group>";
+		};
+		B561E625257A3F5F004C9408 /* AM - PM */ = {
+			isa = PBXGroup;
+			children = (
+				B50456082580B96100B13D15 /* TimeAMPMEntity.swift */,
+				B50456092580B96100B13D15 /* TimeAMPMProvider.swift */,
+				B561E65A257A427F004C9408 /* TimeAMPMWidget.swift */,
+				B50456072580B96100B13D15 /* TimeAMPMWidgetEntryView.swift */,
+			);
+			path = "AM - PM";
+			sourceTree = "<group>";
+		};
+		B561E649257A41C8004C9408 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B561E5DC257A1D25004C9408 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B56F59982574FB7900409A76 /* Tests */ = {
@@ -260,10 +379,12 @@
 				B51F0235254DC2B900F41559 /* Sources */,
 				B51F0236254DC2B900F41559 /* Frameworks */,
 				B51F0237254DC2B900F41559 /* Resources */,
+				B561E5E2257A1D25004C9408 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B561E5E0257A1D25004C9408 /* PBXTargetDependency */,
 			);
 			name = Time;
 			productName = Time;
@@ -287,6 +408,23 @@
 			productName = TimeTests;
 			productReference = B5319C02256F9CD900B75403 /* TimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B561E5D2257A1D25004C9408 /* TimeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B561E5E5257A1D25004C9408 /* Build configuration list for PBXNativeTarget "TimeWidgetExtension" */;
+			buildPhases = (
+				B561E5CF257A1D25004C9408 /* Sources */,
+				B561E5D0257A1D25004C9408 /* Frameworks */,
+				B561E5D1257A1D25004C9408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeWidgetExtension;
+			productName = TimeWidgetExtension;
+			productReference = B561E5D3257A1D25004C9408 /* TimeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		B5DC9C9A2574D85C00751EF0 /* TimeUITests */ = {
 			isa = PBXNativeTarget;
@@ -323,6 +461,9 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = B51F0238254DC2B900F41559;
 					};
+					B561E5D2257A1D25004C9408 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					B5DC9C9A2574D85C00751EF0 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = B51F0238254DC2B900F41559;
@@ -345,6 +486,7 @@
 				B51F0238254DC2B900F41559 /* Time */,
 				B5319C01256F9CD900B75403 /* TimeTests */,
 				B5DC9C9A2574D85C00751EF0 /* TimeUITests */,
+				B561E5D2257A1D25004C9408 /* TimeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -363,6 +505,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B561E5D1257A1D25004C9408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B561E5DD257A1D25004C9408 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +536,7 @@
 				B5319BED256F916900B75403 /* SeparatorView.swift in Sources */,
 				B5319BE9256EE30D00B75403 /* ContentView.swift in Sources */,
 				B51F0258254EF1D300F41559 /* TimeInputView.swift in Sources */,
+				B50456202580CBDB00B13D15 /* DateExtension.swift in Sources */,
 				B5319BF8256F96DA00B75403 /* LoggerExtension.swift in Sources */,
 				B51F023D254DC2B900F41559 /* TimeApp.swift in Sources */,
 				B56F59822574F72F00409A76 /* TimeNowTestModel.swift in Sources */,
@@ -398,7 +549,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				B561E5B32578DE36004C9408 /* DateFormatterTests.swift in Sources */,
+				B50455F82580B8F900B13D15 /* DateTests.swift in Sources */,
 				B5319C05256F9CD900B75403 /* TimeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B561E5CF257A1D25004C9408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50455EE2580B03500B13D15 /* DateExtension.swift in Sources */,
+				B561E5EA257A1E60004C9408 /* DateFormatterExtension.swift in Sources */,
+				B50456002580B94E00B13D15 /* TimeNowProvider.swift in Sources */,
+				B561E5DB257A1D25004C9408 /* TimeWidget.swift in Sources */,
+				B504560A2580B96100B13D15 /* TimeAMPMWidgetEntryView.swift in Sources */,
+				B50456012580B94E00B13D15 /* TimeNowEntry.swift in Sources */,
+				B504560C2580B96100B13D15 /* TimeAMPMProvider.swift in Sources */,
+				B504560B2580B96100B13D15 /* TimeAMPMEntity.swift in Sources */,
+				B561E65B257A427F004C9408 /* TimeAMPMWidget.swift in Sources */,
+				B561E655257A4254004C9408 /* TimeNowWidget.swift in Sources */,
+				B50456022580B94E00B13D15 /* TimeNowWidgetEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +588,11 @@
 			isa = PBXTargetDependency;
 			target = B51F0238254DC2B900F41559 /* Time */;
 			targetProxy = B5319C07256F9CD900B75403 /* PBXContainerItemProxy */;
+		};
+		B561E5E0257A1D25004C9408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B561E5D2257A1D25004C9408 /* TimeWidgetExtension */;
+			targetProxy = B561E5DF257A1D25004C9408 /* PBXContainerItemProxy */;
 		};
 		B5DC9CA12574D85C00751EF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -546,6 +721,7 @@
 		B51F0249254DC2BA00F41559 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +747,7 @@
 		B51F024A254DC2BA00F41559 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,6 +809,52 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time.app/Time";
+			};
+			name = Release;
+		};
+		B561E5E3257A1D25004C9408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94EK2XEZUL;
+				INFOPLIST_FILE = TimeWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developermaris.Time.TimeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B561E5E4257A1D25004C9408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94EK2XEZUL;
+				INFOPLIST_FILE = TimeWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developermaris.Time.TimeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -701,6 +924,15 @@
 			buildConfigurations = (
 				B5319C0A256F9CD900B75403 /* Debug */,
 				B5319C0B256F9CD900B75403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B561E5E5257A1D25004C9408 /* Build configuration list for PBXNativeTarget "TimeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B561E5E3257A1D25004C9408 /* Debug */,
+				B561E5E4257A1D25004C9408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

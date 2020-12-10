@@ -18,7 +18,7 @@ struct TimeInputView: View {
     var body: some View {
         VStack {
             DatePicker("Please set time in 12 hour format", selection: $date, displayedComponents: .hourAndMinute)
-                .environment(\.locale, Locale(identifier: "en_US"))
+                .environment(\.locale, Locale(identifier: "en_US_POSIX"))
                 .datePickerStyle(WheelDatePickerStyle())
                 .labelsHidden()
                 .accessibilityIdentifier("time-input.picker.top")
